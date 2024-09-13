@@ -1,0 +1,87 @@
+/* Login.css */
+
+/* General Styles */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #f0f8f7; /* Light blue background */
+    padding: 20px;
+  }
+ 
+  
+  
+  h1 {
+    color: #12453f; /* Dark green */
+    font-size: 36px;
+    margin-bottom: 10px;
+  }
+  
+  p {
+    color: #289e91; /* Light teal */
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  
+  /* Form Styles */
+  form {
+    background-color: #ffffff; /* White form background */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  input[type='text'],
+  input[type='password'] {
+    width: 100%;
+    padding: 12px 15px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+    background-color: #f9f9f9;
+  }
+  
+  input[type='text']:focus,
+  input[type='password']:focus {
+    border-color: #289e91; /* Teal border on focus */
+    outline: none;
+  }
+  
+  .login-btn {
+    width: 100%;
+    background-color: #12453f; /* Dark green button */
+    color: white;
+    padding: 12px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+  }
+  
+  .login-btn:hover {
+    background-color: #289e91; /* Lighter green on hover */
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    form {
+      padding: 20px;
+      width: 90%;
+    }
+  
+    h1 {
+      font-size: 28px;
+    }
+  
+    p {
+      font-size: 16px;
+    }
+  }
+  

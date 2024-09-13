@@ -1,0 +1,90 @@
+/* General container styling */
+.department-container  {
+    max-width: 100%;
+    margin: 0 auto;
+    margin-top: 20px;
+    padding: 20px ;
+    background-color: rgb(221, 238, 252);
+  }
+  
+  .department-container h2 {
+    font-size: 2.3rem;
+    font-weight: bold;
+    color: #2c3e50;
+    margin-left: 80px;
+    letter-spacing: 2px;
+  }
+  
+  /* Styling for each department item in the carousel */
+  .carousel-container div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    background-color: #dee9ec;
+    border-radius: 15px;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+    margin: 15px;
+    margin-bottom: 50px;
+  }
+
+  
+  /* Department image styles */
+  .carousel-container img {
+    width: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+    
+    margin-bottom: 15px;
+  }
+  
+  
+  /* Department name styles */
+   .department-name {
+    font-size: 1.9rem;
+    font-weight: bold;
+    color: #34495e;
+    margin-top: 15px;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+  }
+  
+  /* Media Queries for responsive design */
+  @media (max-width: 500px) {
+    .carousel-container img {
+      width: 340px;
+      height: 340px;
+      margin-top: 20px;
+      padding-bottom: 0px;
+    }
+  
+    .department-name {
+      font-size: 1rem;
+      margin: 0px;
+    }
+    .department-container{
+      margin-bottom: 0px;
+    }
+  
+    .department-container  h2 {
+      font-size: 1.4rem;
+      margin: 0px;
+    }
+  }
+  
+  @media (max-width: 500px) {
+    .carousel-container img {
+      width: 150px;
+      height: 150px;
+    }
+  
+    .depart-name {
+      font-size: .5rem;
+    }
+  
+    .container.department h2 {
+      font-size: 2.2rem;
+    }
+  }
+  

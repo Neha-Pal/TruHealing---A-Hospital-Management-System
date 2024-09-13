@@ -1,0 +1,90 @@
+/* Container for the message page */
+.message_page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 20px;
+    margin-left: 200px;
+    background-color: #f5f5f5;
+    min-height: 100vh;
+  }
+  
+  /* Page heading */
+  .message_page h1 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  /* Messages banner container */
+  .banner_msg {
+    width: 100%;
+    max-width: 1200px;
+    display: grid;
+    grid-template-columns: 1fr; /* Always one column per row */
+    gap: 20px;
+  }
+  
+  /* Individual message card */
+  .card_msg {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    
+  }
+  
+  
+  
+  /* Message details styling */
+  .details_msg {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .details_msg p {
+    font-size: 1rem;
+    margin-bottom: 10px;
+    color: #555;
+  }
+  
+  /* Highlighted span inside message details */
+  .details_msg span {
+    font-weight: bold;
+    color: #333;
+  }
+  
+  /* Responsive adjustments */
+  @media screen and (max-width: 768px) {
+    .message_page h1 {
+      font-size: 2rem;
+    }
+  
+    .card_msg {
+      padding: 15px;
+    }
+  
+    .details_msg p {
+      font-size: 0.9rem;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .message_page{
+      margin-left: 100px;
+    }
+    .message_page h1 {
+      font-size: .9rem;
+    }
+  
+    .details_msg p {
+      font-size: 0.85rem;
+    }
+  
+    .card_msg {
+      padding: 12px;
+    }
+  }
+  

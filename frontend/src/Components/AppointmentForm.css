@@ -1,0 +1,170 @@
+/* AppointmentForm.css */
+
+.appointment-container {
+    width: 90%;
+    max-width: 900px;
+    margin: 0 auto;
+    margin-top: 90px;
+    margin-bottom: 40px;
+    padding: 20px;
+    background-color: #f9f3f3;
+    border-radius: 10px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  h2 {
+    text-align: center;
+    color: #333;
+    font-family: 'Arial', sans-serif;
+    margin-bottom: 29px;
+  }
+  
+  .form-row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 15px;
+    margin-right: 15px;
+    margin-left: 18px;
+  }
+  
+  .form-row > div {
+    flex: 1;
+    margin-right: 10px;
+  }
+  
+  .form-row > div:last-child {
+    margin-right: 0;
+  }
+  
+  .form-row p {
+    font-size: 19px;
+    color: #555;
+    margin-bottom: 5px;
+  }
+  
+  input[type="text"], input[type="number"], input[type="date"], input[type="password"], textarea, select {
+    width: 90%;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    font-family: 'Arial', sans-serif;
+    transition: border 0.3s;
+  }
+  
+  input[type="text"]:focus, input[type="number"]:focus, input[type="date"]:focus, input[type="password"]:focus, textarea:focus, select:focus {
+    border-color: #66afe9;
+    outline: none;
+  }
+  
+  .depart{
+    margin-left: 20px;
+    margin-top: 10px;
+  }
+  .doctor{
+    margin-left: 20px;
+    margin-top: 24px;
+  }
+
+  textarea {
+    resize: vertical;
+  }
+  
+  .checkbox-container {
+    display: flex;
+    align-items: center;
+    
+    margin-right: 700px;
+    margin-bottom: 15px;
+  }
+  
+  input[type="checkbox"] {
+    transform: scale(1.3);
+    margin-top: 18px;
+  }
+  
+  .submit-container {
+    text-align: center;
+  }
+  
+  button[type="submit"] {
+    background-color: #468e93;
+    color: white;
+    padding: 20px 20px;
+    font-size: 19px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #3d7188;
+  }
+  
+  /* Responsive Styles */
+
+/* Small devices (phones, less than 600px) */
+@media (max-width: 600px) {
+  .form-row {
+      flex-direction: column;
+      margin-right: 0;
+      margin-left: 0;
+  }
+  h2{
+    font-size: 1rem;
+  }
+  .form-row p{
+    font-size: 15px;
+  }
+
+  input[type="text"], input[type="number"], input[type="date"], input[type="password"], textarea, select {
+      width: 94%;
+  }
+
+  .checkbox-container {
+      margin-right: 0;
+      justify-content: center;
+  }
+
+  button[type="submit"] {
+      width: 100%;
+      font-size: 15px;
+  }
+}
+
+/* Medium devices (tablets, 600px to 1024px) */
+@media (min-width: 601px) and (max-width: 1024px) {
+  .form-row {
+      flex-direction: row;
+      justify-content: space-between;
+  }
+
+  input[type="text"], input[type="number"], input[type="date"], input[type="password"], textarea, select {
+      width: 100%;
+      padding: 10px;
+      padding-right: 10px;
+  }
+
+  .checkbox-container {
+      justify-content: center;
+      margin-right: 0px;
+  }
+
+  button[type="submit"] {
+      padding: 15px 20px;
+  }
+}
+
+/* Large devices (desktops, 1025px and up) */
+@media (max-width: 1025px) {
+  .form-row {
+      display: flex;
+  }
+
+  input[type="text"], input[type="number"], input[type="date"], input[type="password"], textarea, select {
+      width: 90%;
+  }
+}

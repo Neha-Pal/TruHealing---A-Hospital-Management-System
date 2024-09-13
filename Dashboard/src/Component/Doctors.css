@@ -1,0 +1,147 @@
+/* General Page Styling */
+.page_doctors {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 190px;
+    background-color: #f4f4f9;
+  }
+  
+  .page_doctors h1 {
+    font-size: 2.5rem;
+    color: #105156;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .banner_doctor {
+    width: 90%;
+    max-width: 1200px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 50px;
+    justify-items: center;
+    padding: 10px;
+  }
+  
+  /* Card Styling */
+  .card {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+  }
+  
+  
+  
+  .card img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+  }
+  
+  .card h4 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #105156;
+  }
+  
+  .details {
+    width: 100%;
+  }
+  
+  .details p {
+    font-size: 1rem;
+    margin: 5px 0;
+  }
+  
+  .details span {
+    color: #333;
+    font-weight: bold;
+  }
+  
+  /* Responsive Styling */
+  @media screen and (max-width: 1024px) {
+    .banner_doctor {
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 15px;
+    }
+  
+    .card img {
+      width: 120px;
+      height: 120px;
+    }
+  
+    .card h4 {
+      font-size: 1.3rem;
+    }
+  
+    .details p {
+      font-size: 0.95rem;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .banner_doctor {
+      grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+      gap: 10px;
+    }
+  
+    .card {
+      padding: 15px;
+    }
+  
+    .card img {
+      width: 100px;
+      height: 100px;
+    }
+  
+    .card h4 {
+      font-size: 1.2rem;
+    }
+  
+    .details p {
+      font-size: 0.9rem;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .page_doctors{
+      padding-left: 130px;
+    }
+    .banner_doctor {
+      grid-template-columns: 1fr;
+      gap: 10px;
+    }
+    .page_doctors h1{
+      font-size: .9rem;
+    }
+  
+    .card {
+      width: 100%;
+      max-width: none;
+      padding: 10px;
+    }
+  
+    .card img {
+      width: 60px;
+      height: 60px;
+    }
+  
+    .card h4 {
+      font-size: .6rem;
+    }
+  
+    .details p {
+      font-size: 0.5rem;
+    }
+  }
+  

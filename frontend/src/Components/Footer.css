@@ -1,0 +1,247 @@
+footer {
+    background-color: #646a71; /* Light grey background */
+    border-top: 2px solid #eaeaea;
+    border-radius: 5px;
+    width: 100%;
+  }
+  
+  
+  /* Footer Content Layout */
+  footer div {
+    display: flex;
+    flex-direction: row; 
+    margin-left: 50px;
+  }
+  
+  /* Quick Links Section */
+  footer .quick-links {
+    margin-top: 10px;
+  }
+  
+  footer .quick-links h4 {
+    color: #dfc9c9;
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+    margin-right: 5px;
+    margin-left: 50px;
+  }
+  
+  footer .quick-links ul {
+    list-style: none;
+    padding: 0;
+    font-size: 1.2rem;
+    
+    
+    display: flex; /* Align links horizontally */
+  }
+  
+  footer .quick-links ul li {
+    margin-right: 20px; /* Space between links */
+    margin-top: 16px;
+  }
+  
+  footer .quick-links ul li a {
+    text-decoration: none;
+    color: #f8f9fa;
+    transition: color 0.3s;
+  }
+  
+  footer .quick-links ul li a:hover {
+    color: #8dbbec;
+  }
+  
+  /* Hours Section */
+  footer .hours {
+    margin-bottom: 20px;
+  }
+  
+  footer .hours h4 {
+    color: #e4d5d5;
+    margin-bottom: 10px;
+    font-size: 1.4rem;
+    margin-right: 15px;
+  }
+  
+  footer .hours ul {
+    list-style: none;
+    padding: 0;
+    font-size: .6rem;
+    margin-top: 22px;
+    
+    display: flex;/* Align hours in a single line */
+  }
+  
+  footer .hours ul li {
+    margin-right: 30px; /* Space between hours */
+  }
+  
+  footer .hours ul li span {
+    font-size: 0.95rem;
+    color: #fcfafa;
+  }
+  
+  /* Contact Information */
+  footer .contact-info {
+    display: flex;
+    margin-left: 400px;
+    align-items: center; /* Align items vertically */
+    
+  }
+  
+  footer .contact-info div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 40px;
+    color: #eee6e6;
+  }
+  
+  footer .contact-info div svg {
+    color: #9fdaf1;
+    font-size: 1.3rem;
+  }
+  
+  footer .contact-info div span {
+    font-size: 1rem;
+  }
+
+
+
+
+
+@media screen and (max-width: 1100px) {
+  footer {
+    border-top: 2px solid #eaeaea;
+  }
+  footer div{
+    margin-left: 10px;
+  }
+  
+  
+  /* Quick Links Section */
+  footer .quick-links {
+    margin-top: 5px;
+  }
+  
+  footer .quick-links ul {
+    font-size: 0rem;
+  }
+  
+  footer .quick-links ul li {
+    margin-top: 0px;
+  }
+  
+  /* Hours Section */
+  footer .hours {
+    margin-bottom: 20px;
+  }
+  
+  footer .hours h4 {
+   
+    margin-top: 10px;
+    margin-left: 10px;
+    font-size: 1rem;
+    margin-right: 29px;
+  }
+  
+  footer .hours ul {
+    font-size: .9rem;
+    margin-top: 10px;
+    display: flexbox;
+  }
+  
+  footer .hours ul li {
+    margin-right: 20px; 
+  }
+  
+  footer .hours ul li span {
+    font-size: 0.65rem;
+    color: #fcfafa;
+  }
+  
+  footer .contact-info {
+    display: flex;
+    margin-left: 0px;
+    justify-content: space-evenly;
+    align-items: center; 
+    
+  }
+  
+  footer .contact-info div {
+    margin-bottom: 20px;
+  }
+  
+  footer .contact-info div svg {
+    font-size: .9rem;
+  }
+  
+  footer .contact-info div span {
+    font-size: .8rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  footer {
+    border-top: 2px solid #eaeaea;
+  }
+  footer div{
+    margin-left: 0px;
+  }
+  
+  
+  /* Quick Links Section */
+  
+  footer .quick-links ul {
+    font-size: 0rem;
+  }
+  
+  footer .quick-links ul li {
+    margin-top: 0px;
+  }
+  
+  /* Hours Section */
+  footer .hours {
+    margin-bottom: 20px;
+  }
+  
+  footer .hours h4 {
+    font-size: 0rem; 
+    margin-left: 0px;
+  }
+  
+  footer .hours ul {
+    font-size: .5rem;
+    margin-top: 5px;
+    margin-left: 0px;
+    display: flexbox;
+  }
+  
+  footer .hours ul li {
+    margin-right: 20px; 
+  }
+  
+  footer .hours ul li span {
+    font-size: 0.4rem;
+    color: #fcfafa;
+  }
+  
+  footer .contact-info {
+    display: flex;
+    margin-left: 0px;
+    justify-content: space-evenly;
+    align-items: center; 
+    
+  }
+  
+  footer .contact-info div {
+    margin-bottom: 20px;
+  }
+  
+  footer .contact-info div svg {
+    font-size: .5rem;
+  }
+  
+  footer .contact-info div span {
+    font-size: .4rem;
+  }
+}

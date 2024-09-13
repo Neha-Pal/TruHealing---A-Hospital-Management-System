@@ -1,0 +1,105 @@
+/* General container styling for centering the login form */
+.login-container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  /* Heading styles */
+  .login-container h2 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 15px;
+  }
+  
+  /* Paragraph for description */
+  .login-container p {
+    color: #666;
+    margin-bottom: 20px;
+  }
+  
+  /* Form styling */
+  .login-container form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Input fields styling */
+  .login-container input[type="text"],
+  .login-container input[type="password"] {
+    padding: 12px;
+    margin-top: 15px;
+    border-radius: 5px;
+    border: 2px solid #ccc;
+    font-size: 14px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  .loginP{
+    font-size: 15px;
+    margin-top: 20px;
+  }
+  
+  /* Button styling */
+  .login-container button[type="submit"] {
+    padding: 12px 20px;
+    background-color: #4c9daf;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .login-container button[type="submit"]:hover {
+    background-color: #457fa0;
+  }
+  
+  /* Not Registered section */
+  .login-container div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .login-container div a {
+    color: #3498db;
+    font-size: 14px;
+    text-decoration: none;
+    margin-left: 10px;
+  }
+  
+  .login-container div a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Adjusting the layout for mobile responsiveness */
+  @media (max-width: 480px) {
+    .login-container {
+      width: 90%;
+      padding: 20px;
+    }
+  
+    .login-container h2 {
+      font-size: 20px;
+    }
+  
+    .login-container p {
+      font-size: 13px;
+    }
+  
+    .login-container input[type="text"],
+    .login-container input[type="password"] {
+      font-size: 12px;
+    }
+  
+    .login-container button[type="submit"] {
+      font-size: 14px;
+    }
+  }
+  

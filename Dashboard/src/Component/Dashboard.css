@@ -1,0 +1,234 @@
+/* General Styling */
+.dashboard_page {
+    display: flex;
+    min-height: 100vh;
+    background-color: white;
+    margin-left: 210px;
+  }
+
+  
+  /* Content Area */
+  .content {
+    flex: 1;
+    padding: 20px;
+  }
+  
+  .banner_dash {
+    width: 100%;
+    background-color: white;
+    border-radius: 8px;
+    
+    padding: 20px;
+  }
+  
+  .firstBox {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .firstBox img {
+    width: 100px;
+    margin-top: 50px;
+    margin-left: 20px;
+    height: 100px;
+    border-radius: 50%;
+    margin-right: 20px;
+  }
+  
+  .firstBox .content {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .firstBox .content h5 {
+    font-size: 1.4em;
+    margin: 0;
+    color: #333;
+  }
+  
+  .firstBox .content p {
+    color: #666;
+    margin: 0;
+  }
+  
+  /* Table Styling */
+  table {
+    width: 100%;
+    border-collapse:collapse;
+    margin-top: 20px;
+  }
+  
+  thead th {
+    background-color: #105156;
+    color: white;
+    padding: 10px;
+    text-align: left;
+    font-size: 1em;
+  }
+  
+  tbody td {
+    padding: 12px;
+    border-bottom: 2px solid #ddd;
+  }
+  
+  tbody tr:hover {
+    background-color: #f9f9f9;
+  }
+  
+  td button {
+    background-color: #d72525;
+    border: none;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  td button:hover {
+    background-color: #741515;
+  }
+  
+  td select {
+    padding: 5px 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    background-color: #f4f4f4;
+    cursor: pointer;
+  }
+  
+  /* Status Dropdown */
+  .value-pending {
+    color: #ff9800;
+    font-weight: bold;
+  }
+  
+  .value-accepted {
+    color: #4caf50;
+    font-weight: bold;
+  }
+  
+  .value-rejected {
+    color: #f44336;
+    font-weight: bold;
+  }
+  
+  /* Visited Icons */
+  .green {
+    color: #4caf50;
+    font-size: 1.2em;
+  }
+  
+  .red {
+    color: #f44336;
+    font-size: 1.2em;
+  }
+  
+  /* Responsive Styling */
+@media screen and (max-width: 1200px) {
+  .page {
+    margin-left: 0;
+  }
+
+  .firstBox img {
+    width: 80px;
+    height: 80px;
+  }
+
+  .firstBox .content h5 {
+    font-size: 1.2em;
+  }
+
+  thead th, tbody td {
+    font-size: 0.9em;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .firstBox {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .firstBox img {
+    margin-bottom: 10px;
+  }
+
+  .firstBox .content {
+    text-align: center;
+  }
+
+  .firstBox .content h5 {
+    font-size: 1em;
+  }
+
+  table {
+    font-size: 0.8em;
+  }
+
+  td button {
+    padding: 5px 8px;
+    font-size: 0.8em;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .content {
+    padding: 10px;
+  }
+
+  table {
+    font-size: 0.7em;
+  }
+
+  td button {
+    padding: 4px 6px;
+    font-size: 0.7em;
+  }
+
+  thead th, tbody td {
+    padding: 8px;
+  }
+
+  td select {
+    font-size: 0.7em;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .dashboard_page{
+    margin-left: 0px;
+  }
+  .page {
+    flex-direction: column;
+    margin-left: 0;
+  }
+
+  .banner {
+    padding: 10px;
+  }
+
+  .firstBox {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .firstBox img {
+    width: 70px;
+    height: 70px;
+  }
+
+  .firstBox .content h5 {
+    font-size: 0.9em;
+  }
+
+  thead th, tbody td {
+    font-size: 0.7em;
+  }
+
+  td button {
+    padding: 3px 5px;
+    font-size: 0.6em;
+  }
+}

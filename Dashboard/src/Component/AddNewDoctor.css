@@ -1,0 +1,158 @@
+/* Main Container Styling */
+.page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-color: #f4f6f9;
+    min-height: 100vh;
+  }
+  
+  .page h2 {
+    font-size: 2.5rem;
+    color: #2c3e50;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  /* Form Styling */
+  form {
+    width: 100%;
+    max-width: 600px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  form div {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+    margin-bottom: 15px;
+  }
+  
+  form input, form select {
+    width: 48%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  form input[type="file"] {
+    width: 100%;
+  }
+  
+  form input[type="password"], form input[type="number"], form input[type="email"] {
+    width: 100%;
+  }
+  
+  .dob-wrapper {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  
+  .dob-wrapper label {
+    margin-right: 10px;
+    font-size: 1rem;
+    color: #333;
+  }
+  
+  .dob-wrapper input {
+    width: calc(100% - 100px);
+  }
+  
+  /* Avatar Section Styling */
+  .first-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .first-wrapper img {
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 30px;
+  }
+  
+  .first-wrapper input[type="file"] {
+    font-size: 0.9rem;
+    padding: 5px;
+  }
+  
+  /* Button Styling */
+  .add-button {
+    display: flex;
+    margin-top: 30px;
+    justify-content: center;
+  }
+  
+  .add-button button {
+    background-color: #2980b9;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .add-button button:hover {
+    background-color: #21618c;
+  }
+  
+  /* Responsive Styling */
+  @media screen and (max-width: 768px) {
+    form {
+      padding: 15px;
+    }
+  
+    form input, form select {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+  
+    form label {
+      font-size: 0.9rem;
+    }
+  
+    .add-button button {
+      font-size: 1rem;
+      padding: 10px 15px;
+    }
+  
+    .first-wrapper img {
+      width: 100px;
+      height: 100px;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .page h2 {
+      font-size: .9rem;
+    }
+  
+    form {
+      padding: 10px;
+    }
+  
+    .add-button button {
+      font-size: 0.9rem;
+      padding: 8px 12px;
+    }
+  
+    .first-wrapper img {
+      width: 80px;
+      height: 80px;
+    }
+  }
+  

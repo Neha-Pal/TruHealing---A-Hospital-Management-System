@@ -1,0 +1,124 @@
+/* Navbar.css */
+
+/* Basic styling for the navbar */
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #334059;
+    color: white;
+  }
+  
+  .logo {
+    font-size: 1.9rem;
+    font-weight: bold;
+    margin-left: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .navLinks {
+    display: flex;
+    align-items: center;
+  }
+  
+  .navLink {
+    display: flex;
+    align-items: center;
+  }
+  
+  .links {
+    display: flex;
+    gap: 30px;
+  }
+  
+  .links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: color 0.3s;
+  }
+  
+  .links a:hover {
+    color: #ddd;
+  }
+  
+  .logoutBtn, .loginBtn {
+    background-color: #95d7fa;
+    border: none;
+    color: rgb(38, 28, 28);
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 20px;
+    font-size: 1.1rem;
+    margin-right: 20px;
+    margin-left: 40px;
+    font-weight: 600;
+  }
+  
+  .logoutBtn:hover, .loginBtn:hover {
+    background-color: #555;
+  }
+  
+  /* Styles for mobile screens */
+  @media (max-width: 600px) {
+    .container {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      background-color: #334059;
+      color: white;
+    }
+    
+    .logo {
+      display: none;
+    }
+    
+    .navLinks {
+      display: flex;
+      align-items: center;
+      margin-left: 20px;
+    }
+    
+    .navLink {
+      display: flex;
+      align-items: center;
+    }
+    
+    .links {
+      display: flex;
+      gap: 30px;
+    }
+    
+    .links a {
+      color: white;
+      text-decoration: none;
+      font-size: .8rem;
+      transition: color 0.3s;
+    }
+    
+    .links a:hover {
+      color: #ddd;
+    }
+    
+    .logoutBtn, .loginBtn {
+      padding: 8px 8px;
+      font-size: .7rem;
+      right: 0px; 
+      margin-right: 0px;
+    }
+    
+    .logoutBtn:hover, .loginBtn:hover {
+      background-color: #555;
+    }
+  }
+  
+  /* Ensure menu toggle button is hidden on larger screens */
+  @media (max-width: 400px) {
+    .links a{
+      font-size: .7rem;
+    }
+  }
+  

@@ -1,0 +1,36 @@
+/* App.css */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .App {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .Sidebar {
+    flex: 0 0 250px; /* Adjust width as needed */
+    height: 100vh;
+    overflow: auto;
+  }
+  
+  .MainContent {
+    flex: 1;
+    padding: 20px;
+  }
+  
+  @media (max-width: 768px) {
+    .Sidebar {
+      display: none; /* Hide sidebar on smaller screens */
+    }
+  
+    .MainContent {
+      padding: 10px;
+    }
+  }
+  
+  .Toastify__toast-container {
+    top: 10px;
+  }
+  
